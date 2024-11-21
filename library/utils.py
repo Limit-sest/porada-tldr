@@ -6,7 +6,7 @@ def setup():
     discord_token = input('Please enter your discord bot token: ')
 
     if not baka_username or not baka_password or not gemini_api_key or not discord_token:
-        print('You left some field unfilled >:( Please try again.')
+        print('You left some field unfilled >:( Please try again.\n')
         setup()
     else:
         with open('.env', 'w') as f:
